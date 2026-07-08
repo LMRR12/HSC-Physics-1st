@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+    width:100%;
+    color:white;
+    overflow-x:hidden;
+
+    background:
+    linear-gradient(135deg,#050816,#101936);
+
+}
+
+
+
+.background{
+
+position:fixed;
+inset:0;
+overflow:hidden;
+z-index:-1;
+
+}
+
+
+.background .circle{
+
+position:absolute;
+border-radius:50%;
+filter:blur(80px);
+
+}
+
+
+
+.c1{
+
+width:350px;
+height:350px;
+background:#0077ff;
+top:-100px;
+left:-100px;
+
+}
+
+
+
+.c2{
+
+width:300px;
+height:300px;
+background:#00ffd5;
+right:-100px;
+top:300px;
+
+}
+
+
+
+.c3{
+
+width:250px;
+height:250px;
+background:#9d00ff;
+bottom:0;
+left:40%;
+
+}
+
+
+
+
+
+header{
+
+text-align:center;
+padding:70px 20px 30px;
+
+}
+
+
+
+header h1{
+
+font-size:55px;
+letter-spacing:2px;
+
+}
+
+
+header p{
+
+font-size:20px;
+opacity:.8;
+margin-top:15px;
+
+}
+
+
+
+
+.stats{
+
+display:flex;
+justify-content:center;
+gap:30px;
+margin:30px;
+
+
+}
+
+
+.stats div{
+
+background:rgba(255,255,255,.1);
+padding:20px 40px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+text-align:center;
+
+}
+
+
+
+.stats h2{
+
+font-size:35px;
+
+}
+
+
+
+
+.search{
+
+text-align:center;
+margin:30px;
+
+}
+
+
+
+.search input{
+
+width:350px;
+padding:15px 20px;
+
+border-radius:30px;
+border:none;
+outline:none;
+
+font-size:16px;
+
+}
+
+
+
+
+.chapter-container{
+
+width:100%;
+max-width:1400px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+padding:40px;
+
+}
+
+
+
+
+.chapter{
+
+background:rgba(255,255,255,.12);
+
+border:1px solid rgba(255,255,255,.2);
+
+border-radius:25px;
+
+padding:30px;
+
+backdrop-filter:blur(15px);
+
+transition:.4s;
+
+}
+
+
+
+
+.chapter:hover{
+
+transform:translateY(-10px);
+
+background:rgba(255,255,255,.2);
+
+}
+
+
+
+.chapter h2{
+
+margin-bottom:15px;
+
+}
+
+
+
+.chapter p{
+
+opacity:.8;
+
+line-height:1.5;
+
+height:70px;
+
+}
+
+
+
+.chapter a{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+background:white;
+
+color:#111;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+.chapter a:hover{
+
+background:#0099ff;
+color: white;
+}
+
+*{
+    max-width:100%;
+}
+
+
+html{
+    overflow-x:hidden;
+}
