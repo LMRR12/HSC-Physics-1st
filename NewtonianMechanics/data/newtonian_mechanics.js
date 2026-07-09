@@ -1,7 +1,7 @@
 // ==========================================
 // Physics Practice Book
-// Chapter 2 : Vector
-// data/vector.js
+// Chapter 4 : Newtonian Mechanics
+// data/newtonian_mechanics.js
 // ==========================================
 
 const chapterData = {
