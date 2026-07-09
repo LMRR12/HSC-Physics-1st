@@ -794,7 +794,7 @@ const chapterData = {
 
     title:"Actual Time when Clock Loses n Seconds per Day",
 
-    formula:"\\(\\text{Actual Time}=\\frac{86400}{86400-n}\\times\\text{Clock Time}\\)",
+    formula:"\ {Actual Time}=\\frac{86400}{86400-n}\\times\ 2 \ ",
 
     description:"Used when a pendulum clock loses n seconds every day."
 },
@@ -804,7 +804,7 @@ const chapterData = {
 
     title:"Actual Time when Clock Gains n Seconds per Day",
 
-    formula:"\\(\\text{Actual Time}=\\frac{86400}{86400+n}\\times\\text{Clock Time}\\)",
+    formula:"\ {Actual Time}=\\frac{86400}{86400+n}\\times\ 2 \ ",
 
     description:"Used when a pendulum clock gains n seconds every day."
 },
@@ -814,7 +814,7 @@ const chapterData = {
 
     title:"Length Error from Clock Error",
 
-    formula:"\\(\\frac{\\Delta l}{l}=\\frac{2n}{86400}\\)",
+     formula:" \\frac{\\Delta l}{l}=\\frac{2n}{86400} \ ",
 
     description:"Relation between daily clock error and fractional change in pendulum length."
 },
