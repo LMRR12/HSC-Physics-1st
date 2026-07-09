@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Physics Formula & Problem Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+
+        <h1 id="chapterTitle">
+            Physics
+        </h1>
+
+        <p id="chapterSubtitle">
+            Complete Formula Sheet & Type-wise Mathematical Problems
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span id="formulaCount">0</span>
+                <small>Formulas</small>
+            </div>
+
+            <div class="stat">
+                <span id="problemCount">0</span>
+                <small>Problem Types</small>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Toolbar -->
+
+    <section class="toolbar">
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search formula or problem..."
+        >
+
+        <div id="categoryButtons" class="categories">
+
+            <!-- Generated Automatically -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Formula Section -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Formula Sheet
+            </h2>
+
+            <p>
+                Complete formulas with short descriptions.
+            </p>
+
+        </div>
+
+        <div
+            id="formulaContainer"
+            class="formula-grid"
+        >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Problem Section -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Type-wise Mathematical Problems
+            </h2>
+
+            <p>
+                One solved example from every important problem type.
+            </p>
+
+        </div>
+
+        <div
+            id="problemContainer"
+            class="problem-grid"
+        >
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        Physics Practice Book
+
+    </footer>
+
+
+    <!-- MathJax -->
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- Chapter Data -->
+
+    <script src="data/gravitation_gravity.js"></script>
+
+    <!-- Rendering Script -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
