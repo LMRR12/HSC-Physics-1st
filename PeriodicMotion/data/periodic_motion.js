@@ -691,7 +691,7 @@ const chapterData = {
 
     title:"Approximate Gravity at Height",
 
-    formula:"g_h=g\\left(1-\\frac{2h}{R}\right)",
+    formula:"\ g_h=g\\left(1-\\frac{2h}{R}\\right) \ ",
 
     description:"For small height compared to Earth's radius."
 },
@@ -788,6 +788,36 @@ const chapterData = {
     description:"Shorter time period causes clock to gain time."
 },
 
+
+{
+    category:"Pendulum Clock",
+
+    title:"Actual Time when Clock Loses n Seconds per Day",
+
+    formula:"\\(\\text{Actual Time}=\\frac{86400}{86400-n}\\times\\text{Clock Time}\\)",
+
+    description:"Used when a pendulum clock loses n seconds every day."
+},
+
+{
+    category:"Pendulum Clock",
+
+    title:"Actual Time when Clock Gains n Seconds per Day",
+
+    formula:"\\(\\text{Actual Time}=\\frac{86400}{86400+n}\\times\\text{Clock Time}\\)",
+
+    description:"Used when a pendulum clock gains n seconds every day."
+},
+
+{
+    category:"Pendulum Clock",
+
+    title:"Length Error from Clock Error",
+
+    formula:"\\(\\frac{\\Delta l}{l}=\\frac{2n}{86400}\\)",
+
+    description:"Relation between daily clock error and fractional change in pendulum length."
+},
 
 
 // ==================================================
@@ -2091,6 +2121,106 @@ problems: [
     answer:"\\(3:8\\)",
 
     explanation:"Maximum acceleration \\(=A\\omega^2\\)."
+},
+
+// ==================================================
+// PENDULUM CLOCK ADVANCED MATHEMATICAL PROBLEMS
+// ==================================================
+
+{
+    category:"Pendulum Clock",
+
+    type:"Finding Actual Time from Clock Error",
+
+    question:"A pendulum clock loses 5 seconds per day. If the clock shows 12 hours, find the actual time elapsed.",
+
+    answer:"\\(12h\\;\\frac{86400}{86395}\\)",
+
+    explanation:"For a clock losing n seconds per day, actual time is multiplied by \\(\\frac{86400}{86400-n}\\)."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Finding Daily Loss from Time Period Error",
+
+    question:"A pendulum clock has a time period 0.1% greater than the correct value. How much time will it lose in one day?",
+
+    answer:"43.2 seconds",
+
+    explanation:"\\(\\frac{\\Delta T}{T}=\\frac{1}{2}\\frac{\\Delta l}{l}\\). Clock error per day = \\(86400\\times0.0005\\)."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Finding Length Change from Daily Loss",
+
+    question:"A pendulum clock loses 27 seconds per day. Find the fractional increase in its length.",
+
+    answer:"\\(\\frac{\\Delta l}{l}=\\frac{1}{1600}\\)",
+
+    explanation:"Using \\(\\frac{\\Delta l}{l}=\\frac{2n}{86400}\\)."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Clock Correction by Length Adjustment",
+
+    question:"A pendulum clock loses 60 seconds per day. By what fraction should the length be reduced to correct it?",
+
+    answer:"\\(\\frac{1}{720}\\)",
+
+    explanation:"A losing clock has excessive time period, so length must be reduced."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Clock Gain Problem",
+
+    question:"A clock gains 36 seconds per day. Find the fractional decrease in pendulum length.",
+
+    answer:"\\(\\frac{1}{2400}\\)",
+
+    explanation:"For gaining clock, time period is smaller, so length is smaller."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Actual Time from Fast Clock",
+
+    question:"A clock gains 10 seconds per day. If it shows 3 hours, find the actual time passed.",
+
+    answer:"\\(3h\\times\\frac{86400}{86410}\\)",
+
+    explanation:"For a clock gaining n seconds per day, use \\(\\frac{86400}{86400+n}\\)."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Temperature Correction",
+
+    question:"The length of a pendulum increases by 0.2% due to heating. Find the time lost per day.",
+
+    answer:"86.4 seconds",
+
+    explanation:"Time period change is half the fractional length change."
+},
+
+{
+    category:"Pendulum Clock",
+
+    type:"Finding Temperature Effect",
+
+    question:"A pendulum clock loses 21.6 seconds per day due to thermal expansion. Find percentage increase in length.",
+
+    answer:"0.05%",
+
+    explanation:"Using \\(\\frac{\\Delta T}{T}=\\frac12\\frac{\\Delta l}{l}\\)."
 }
 
 
